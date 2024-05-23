@@ -248,7 +248,7 @@ li{
   margin-left: 10px;
   padding: 10px;
   color: black;
-  font-size: larger;
+  font-size: medium;
 }
 
 a{
@@ -272,7 +272,7 @@ a{
   }
 
   .slide-image{
-    width: 400px;
+    width: 380px;
   }
   
   .card-body {
