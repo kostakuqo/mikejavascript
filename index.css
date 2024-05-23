@@ -1,0 +1,290 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.header-line-quote {
+  
+  display: flex;
+  justify-content: space-between;
+  
+}
+.flag-logo{
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-left: 12px;
+}
+.phone-section{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid orange;
+  border-radius: 6px\;
+}
+.phone-number{
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: large;
+}
+.phone-logo{
+  width: 30px;
+  height: 30px;
+  border-radius: 40%;
+  padding-top: 2px;
+  margin-left: 6px;
+}
+
+.header-line-quote p {
+  border: 1px solid orange;
+  border-radius: 8px;
+  padding: 8px;
+  margin-right: 6px;
+  font-size: small;
+}
+.mike-logo {
+  height: 40px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 40px;
+  margin-top: 6px;
+  margin-left: 6px;
+
+}
+
+.first-section {
+  display: flex;
+  position: relative;
+  height: 300px;
+  background-image: url("images/vicenzapicture.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  display: flex;
+  object-fit: contain;
+  justify-content: center;
+}
+
+.content-first-section {
+  color: white;
+  margin-top: 40px;
+}
+
+.taxi-name {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: xx-large;
+  padding-left: 26px;
+}
+.taxi-quote {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: medium;
+  padding: 12px;
+}
+.contact-button {
+  align-self: center;
+  margin-left: 160px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #ffd700;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-size: larger;
+}
+
+.contact-button:hover {
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.slide-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide-image {
+  width: 100%;
+  height: 400px;
+  object-fit:contain;
+  background-color: #ffd700;
+  border-radius: 6px;
+}
+.slide {
+  position: relative;
+}
+
+.prev {
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  background-color: orange;
+  width: 20px;
+}
+
+.next {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  background-color: orange;
+  width: 20px;
+}
+
+.next:hover {
+  cursor: pointer;
+}
+.second-section {
+  display: flex;
+  justify-content: center;
+  place-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.about-mike {
+  align-items: center;
+  padding: 12px;
+}
+
+#map {
+  width: 533px;
+  height: 400px;
+ 
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  position: absolute;
+  right: 32%;
+  background-color: #4b9cd3;
+  border: none;
+  font-size: larger;
+  color: white;
+  border-radius: 6px;
+  margin-top: 6px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  animation: pulse 1s infinite;
+}
+
+.card-body {
+  position: relative;
+  
+
+}
+
+
+.whatsapp-logo{
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+.phonelogo{
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  
+}
+
+
+.whatsapp-logo:hover{
+  cursor: pointer;
+  animation: pulse 1s infinite;
+}
+
+.header-line-quote .number{
+ 
+  margin-bottom: 20px;
+  
+}
+span{
+  margin-bottom: 20px;
+}
+
+.number{
+  font-size: small;
+}
+.mike-description{
+  border: 1px solid #FFD700;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.main-footer{
+  background-color: #FFD700;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+li{
+ list-style-type: none;
+}
+
+.info-span{
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 10px;
+  color: black;
+  font-size: larger;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+.contact-image{
+  
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  #map{
+    width: 400px;
+    height: 200px;
+
+  
+  }
+
+  .slide-image{
+    width: 400px;
+  }
+  
+  .card-body {
+    position: relative;
+    
+  
+  }
+  
+
+
+
+
+
+
+}

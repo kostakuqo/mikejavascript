@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/public/Capture.PNG" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"
+    />
+    <title>mike taxi</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-line-quote">
+        <img class="mike-logo" src="images/miketax.PNG" alt="">
+        
+
+        <img
+          class="whatsapp-logo"
+          src="images/logo-whatsapp-picture-images-hd-6.png"
+          alt=""
+          onclick="openWhatsAppChat()"
+        />
+        <!-- <img class="flag-logo" src="images/Flag_of_Italy.svg.png" alt="" /> -->
+
+        <p>If you want to be fast, drive with Mike</p>
+      </div>
+    </header>
+    <section class="phone-section">
+      <div>
+        <img class="phone-logo" src="images/phonelogo.jpg" alt="" />
+      </div>
+      <div class="phone-number">+393923202929</div>
+    </section>
+    <section class="first-section">
+      <div class="content-first-section">
+        <h3 class="taxi-name">Mike Taxi Vicenza</h3>
+        <h4 class="taxi-quote">
+          Welcome to Vicenza ,drive around the city.Always enjoy the ride!
+        </h4>
+        <button class="contact-button" onclick="openWhatsAppChat()">
+          Contact Mike
+        </button>
+      </div>
+    </section>
+
+    <section class="second-section">
+      <div>
+        <h2>About Mike</h2>
+      </div>
+      <div class="about-mike">
+        <p class="mike-description">
+          Mike is a person full of positive energy, very communicative,
+          dedicated to the work he likes.
+          <br />
+
+          Customers to be able to find a taxi in a much simpler and more
+          convenient way, with no time lost or the inconvenience related to a
+          phone call,sms ,whatsApp sms,.
+        </p>
+      </div>
+    </section>
+
+    <section class="slide-container">
+      <div class="slide">
+        <img class="slide-image" src="images/makina1.jpg" alt="slide 1" />
+        <!-- <a class="change-slide-buttons prev" onclick="plusSlider('slide',-1)"
+          >&#10094;</a -->
+        <!-- >
+        <a class="change-slide-buttons next" onclick="plusSlider('slide',1)"
+          >&#10095;</a
+        > -->
+      </div>
+
+      <div class="slide">
+        <img class="slide-image" src="images/makina2.jpg" alt="slide 2" />
+      <!-- <a class="change-slide-buttons prev" onclick="plusSlider('slide',-1)"
+          >&#10094;</a
+        >
+        <a class="change-slide-buttons next" onclick="plusSlider('slide',1)"
+          >&#10095;</a
+        > -->
+      <!-- </div> -->
+    </section>
+    <section class="second-section">
+      <div>
+        <h2>Volkswagen Sharan</h2>
+      </div>
+      <div class="about-mike">
+        <p class="mike-description">
+          Volkswagen Sharan SE Nav 2.0 TDI ‘It has more welly than you’d think.
+          <br />
+          Car Licence Plate:<strong>EL 250 AK.</strong>
+          <br />
+          CAP:<strong>36100.</strong>
+          <br />
+          Seats:<strong>7.</strong>
+          <br />
+          Color:<strong>Dark blue.</strong>
+        </p>
+      </div>
+    </section>
+
+    <section class="map-container">
+      <div class="card">
+        <div class="card-body">
+          <div id="map"></div>
+          <button type="button" class="btn btn-primary">Use my location</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="footer-div">
+        <nav class="footer-nav">
+          <ul class="footer-div">
+            <div>
+              <li class="footer-li">
+                <img
+                  class="contact-image"
+                  src="images/phonelogo.jpg"
+                  alt=""
+                /><span class="info-span">+393923202929</span>
+              </li>
+              <li class="footer-li">
+                <img class="contact-image" src="images/mail.jpg" alt="" /><span
+                  class="info-span"
+                  >Miklikuqo98@icloud.com</span
+                >
+              </li>
+              <li class="footer-li">
+                <a
+                  class="footer-a"
+                  href="https://www.google.ro/maps/place/Via+Andrea+Marani,+28,+36100+Vicenza+VI,+Italy/@45.5443116,11.5732121,17z/data=!3m1!4b1!4m6!3m5!1s0x477f318a7ec6a5f9:0x2bd5e70853bef801!8m2!3d45.5443116!4d11.5732121!16s%2Fg%2F11cpdmgv5v?entry=ttu"
+                  ><img class="contact-image" src="images/maps.png" /><span
+                    class="info-span"
+                    >Via Andrea Marani,Vicenza VI, Italy</span
+                  ></a
+                >
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
