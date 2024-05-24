@@ -21,7 +21,7 @@ html {
   display: flex;
   flex-direction: row;
   border: 1px solid orange;
-  border-radius: 6px\;;
+  border-radius: 6px;
 }
 .phone-number {
   margin-left: 10px;
