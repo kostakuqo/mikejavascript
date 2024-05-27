@@ -68,3 +68,7 @@ function openWhatsAppChat() {
   // Open the WhatsApp chat link in a new tab/window
   window.open(url, "_blank");
 }
+
+function makephonecall() {
+  window.open("tel:" + "+393923202929");
+}
