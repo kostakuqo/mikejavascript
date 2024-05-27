@@ -27,6 +27,7 @@ html {
   margin-left: 10px;
   margin-top: 10px;
   font-size: large;
+  cursor: pointer;
 }
 .phone-logo {
   width: 30px;
